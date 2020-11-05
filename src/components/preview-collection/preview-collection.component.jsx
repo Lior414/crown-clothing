@@ -15,8 +15,8 @@ const PreviewCollection = ({title, items}) => (
                     )
                 )
                 .map(
-                     ({id, ...otherItemProps})=> (
-                        <CollectionItem key={id} {...otherItemProps}/>
+                     (item)=> (
+                        <CollectionItem key={item.id} item={item}/>
                     )
                 )
             }
